@@ -1,0 +1,46 @@
+.container-header {
+    background-color: hsl(10, 79%, 65%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: hsl(27, 66%, 92%);
+    min-width: 20rem;
+}
+
+.container-header-my-balance {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.title-header-my-balance {
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.amount-header-my-balance {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.circles-header {
+    width: 25px;
+    height: 25px;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 50%;
+    position: relative;
+}
+
+.circles-header::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    position: absolute;
+    right: 12px;
+    border: 1px solid white;
+    border-radius: 50%;
+}

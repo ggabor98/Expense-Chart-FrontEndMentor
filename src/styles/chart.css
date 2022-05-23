@@ -1,0 +1,95 @@
+.container-chart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chart-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.chart-divider {
+    border: 1px solid hsl(27, 66%, 92%);
+}
+
+.chart-container-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chart-total-amount-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.chart-total-amount-title {
+    color: hsl(28, 10%, 53%);
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.chart-total-amount-price {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.chart-total-amount-increase {
+    font-size: 10px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.chart-component-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.container-chart-bar {
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 4px;
+    flex: 1 1 auto;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.container-chart-bar:hover {
+    background-color: hsl(10, 84%, 74%);
+}
+
+.container-chart-bar-label {
+    font-size: 10px;
+    color: hsl(28, 10%, 53%);
+}
+
+.today {
+    background-color: hsl(186, 34%, 60%);
+}
+
+.today:hover {
+    background-color: hsl(186, 40%, 74%)!important;
+}
+
+.tooltip-amount-bar-chart {
+    font-size: 10px;
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    width: 100%;
+    display: none;
+}
+
+.container-chart-bar:hover + .tooltip-amount-bar-chart { 
+    transition: 0.3s;
+    display: block!important;
+    position: absolute;
+    top: -20px;
+}
